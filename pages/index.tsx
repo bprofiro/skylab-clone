@@ -1,6 +1,7 @@
 //import Head from 'next/head'
 
 import { Heading, Grid, Flex, Input, Link, Button, Text } from "@chakra-ui/core";
+import Divider from '../components/Divider';
 
 export default function Home() {
   return (
@@ -85,6 +86,20 @@ export default function Home() {
             Registre-se
           </Link>
         </Text>
+
+        <Divider />
+
+        <Flex alignItems="center">
+          <Text fontSize="sm">Ou entre com</Text>
+          <Button
+            height="50px"
+            flex="1"
+            backgroundColor="gray.600"
+            marginLeft={6}
+            borderRadius="sm"
+            _hover={{ backgroundColor: 'blue.500' }}
+          >GITHUB</Button>
+        </Flex>
       </Flex>
     </Grid>
   )
